@@ -19,5 +19,8 @@ public class BoardApi {
 	public Page<Board> pageBoardList(@PageableDefault(page = 0, size = 10) Pageable pageable,
 			Board board) {
 		return boardService.getBoardList(board, pageable);
+		
+		
+		
 	}
 }
